@@ -31,10 +31,10 @@ main() {
     # if we're not using the latest version of a given major version.
     apt-get update
     apt install --no-install-recommends --assume-yes \
-        "wine-stable=${version}" \
-        "wine-stable-amd64=${version}" \
-        "wine-stable-i386=${version}" \
-        "winehq-stable=${version}"
+        "wine-stable" \
+        "wine-stable-amd64" \
+        "wine-stable-i386" \
+        "winehq-stable"
 
     purge_packages
 }
